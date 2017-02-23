@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>AugustR</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item>
+      <ion-label stacked>OfflineKey</ion-label>
+      <ion-input [(ngModel)]="offlineKey" (change)="saveSettings()"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label stacked>OfflineKeyOffset</ion-label>
+      <ion-input [(ngModel)]="offlineKeyOffset" (change)="saveSettings()" type="number"></ion-input>
+    </ion-item>
+  </ion-list>
+</ion-content>

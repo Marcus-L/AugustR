@@ -1,0 +1,11 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>AugustR</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-card (click)="doUnlock()" class="lock" [class.active]="isUnlocking">
+    <ion-icon name="lock"></ion-icon>
+  </ion-card>
+</ion-content>
