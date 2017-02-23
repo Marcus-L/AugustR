@@ -4,7 +4,8 @@ using Newtonsoft.Json;
 using System.Net;
 using System.Text;
 
-private const string FIREBASE_SERVER_KEY = "YOUR_KEY_HERE";
+// note: leave the "key=" in there, it's required
+private const string FIREBASE_SERVER_KEY = "key=YOUR_KEY_HERE";
 
 public static async Task<HttpResponseMessage> Run(HttpRequestMessage req, TraceWriter log)
 {

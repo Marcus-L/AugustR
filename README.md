@@ -45,7 +45,8 @@ Ionic App:
 
 1. Edit the config.xml and ionic.config.json to use your package name
 1. Add the google-services.json from the Firebase Console to the ionic-app directory
-1. Build and deploy the app to a test device attached to your computer: `ionic run android --device`
+1. Restore files: `npm install` and `ionic state restore`
+1. Build and deploy the app to a test device attached to your computer: `ionic run android`
 1. In the running app, go to the settings tab and enter in the key and index retrieved from the August app.
 1. Test that the offline key works by unlocking the door with the lock button on the app Lock tab
 
