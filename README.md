@@ -1,7 +1,7 @@
 # AugustR
 The [August Smart Lock](http://august.com) is a decent smart lock other than not having an open, accessible API. In fact, without one it's actually kind of a dumb lock, not a smart one. Let's fix that.
 
-This project uses an old/spare phone to create an August Smart Lock Web API. Feel free to use it as is or rip out any of the components to use in your own project:
+This project uses an old/spare phone to create an open Web API for the August Smart Lock. Feel free to use it as is or rip out any of the components to use in your own project:
 1. An [August Bluetooth Library](ionic-app/src/components/augustlockservice.ts) implementing the offline key protocol (ported to Typescript from a fork of the [AugustCtl](https://github.com/sretlawd/augustctl) project)
 1. Ionic 2 app with background notification processing of Firebase Cloud Messaging (FCM) Notifications, using the library to interact with th elock
 1. Simple Azure Function Web API to trigger the FCM Notification on demand.
@@ -43,6 +43,9 @@ Ionic App:
 1. Build and deploy the app to a test device attached to your computer: `ionic run android --device`
 1. In the running app, go to the settings tab and enter in the key and index retrieved from the August app.
 1. Test that the offline key works by unlocking the door with the lock button on the app Lock tab
+
+<img src="screen.png" width="192">
+<img src="screen2.png" width="192">
 
 ## Using the API and next steps:
 
