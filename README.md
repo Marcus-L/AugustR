@@ -21,6 +21,7 @@ Android instructions listed, should theoretically work if you build it for iOS b
 ## Build instructions
 
 Firebase Console:
+
 1. Create a new project (ex: "august-repeater")
 1. Under Settings > Cloud Messaging, take note of the project's "server key"
 1. Under Overview > Add app (Android)
@@ -28,16 +29,19 @@ Firebase Console:
     1. Download the config file (google-services.json)
 
 Azure Console
+
 1. Create a new Function App
 1. Create a function from the HttpTrigger-CSharp template w/ "Function" authorization level
 1. Paste in the code from [azure-function/run.csx](azure-function/run.csx), and enter your Firebase project's server key into the `FIREBASE_SERVER_KEY` variable.
 1. Make a note of the Function Url. This is your Web API.
 
 Get Offline Keys from a logged-in August app
+
 1. With a _rooted_ Android phone, get the `handshakeKey` and `handshakeKeyIndex` from the `/data/data/com.august.luna/shared_prefs/PeripheralInfoCache.xml` file, or
 1. From an iPhone, the key and offset can be found in the plist file: `User Applications/August/Library/Preferences/com.august.iossapp.plist`
 
 Ionic App:
+
 1. Edit the config.xml and ionic.config.json to use your package name
 1. Add the google-services.json from the Firebase Console to the ionic-app directory
 1. Build and deploy the app to a test device attached to your computer: `ionic run android --device`
